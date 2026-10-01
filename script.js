@@ -7,28 +7,28 @@ const products = [
     {
         name: "Kanchipuram Silk Saree",
         price: "MUR 3,500",
-        image: "images/saree1.png",
+        image: "saree1.png",
         description: "Elegant silk saree with traditional zari detailing."
     },
 
     {
         name: "Banarasi Silk Saree",
         price: "MUR 3,200",
-        image: "images/saree2.png",
+        image: "saree2.png",
         description: "Beautiful Banarasi saree with intricate woven details."
     },
 
     {
         name: "Organza Saree",
         price: "MUR 2,800",
-        image: "images/saree3.png",
+        image: "saree3.png",
         description: "Lightweight and elegant, perfect for special occasions."
     },
 
     {
         name: "Georgette Saree",
         price: "MUR 2,500",
-        image: "images/saree4.png",
+        image: "saree4.png",
         description: "Graceful georgette saree with a contemporary finish."
     }
 
