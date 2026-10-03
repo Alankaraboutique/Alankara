@@ -144,16 +144,15 @@ nav a:hover::after {
 }
 
 .hero-small {
-    transform: translateY(-45px);
+    margin-bottom: -20px;
 }
 
 .hero h1 {
-    transform: translateY(-45px);
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.08;
     font-weight: normal;
     letter-spacing: 1px;
-    margin: 8px 0 15px;
+    margin: -10px 0 15px;
 }
 
 .hero-text {
