@@ -111,52 +111,20 @@ nav a:hover::after {
    HERO SECTION
    ================================ */
 
-.hero {
-    min-height: 88vh;
-
-    display: flex;
-    align-items: flex-end;
-
-    padding: 8%;
-
-    background-image:
-        linear-gradient(
-            rgba(61, 16, 25, 0.38),
-            rgba(61, 16, 25, 0.38)
-        ),
-        url("images/hero.png");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-content {
-    max-width: 600px;
-    color: #F8F3E8;
-}
-
-.small-title,
-.section-subtitle {
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #B89A5A;
-}
-
-.hero-top {
+..hero-top {
     transform: translateY(-180px);
 }
 
 .hero-small {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 .hero h1 {
     font-size: clamp(28px, 3.5vw, 42px);
-    line-height: 1.08;
+    line-height: 1.15;
     font-weight: normal;
     letter-spacing: 1px;
-    margin: 5px 0 15px;
+    margin: 0 0 15px;
 }
 
 .hero-text {
