@@ -115,7 +115,7 @@ nav a:hover::after {
     min-height: 88vh;
 
     display: flex;
-  align-items: flex-end;
+    align-items: flex-end;
 
     padding: 8%;
 
@@ -142,6 +142,7 @@ nav a:hover::after {
     text-transform: uppercase;
     color: #B89A5A;
 }
+
 .hero-small {
     transform: translateY(-45px);
 }
