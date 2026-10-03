@@ -230,12 +230,6 @@ h2 {
         0 18px 45px rgba(90, 23, 36, 0.15);
 }
 
-.product-card:hover {
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 12px 35px rgba(90, 23, 36, 0.12);
-}
 
 .product-image {
     width: 100%;
