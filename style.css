@@ -437,13 +437,21 @@ footer p {
     }
 
     .hero {
-        min-height: 75vh;
-        padding: 30px;
-    }
+    min-height: 75vh;
+    padding: 30px 25px;
+    align-items: flex-end;
+}
 
     .hero h1 {
-        font-size: 46px;
-    }
+    font-size: 34px;
+    line-height: 1.1;
+    margin: 8px 0 18px;
+}
+   .hero-small {
+    transform: none;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
 
     .hero-text {
         font-size: 16px;
