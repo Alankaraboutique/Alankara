@@ -56,16 +56,39 @@ nav {
     gap: 30px;
 }
 
+nav {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
 nav a {
     text-decoration: none;
     color: #5A1724;
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 1px;
+    background: #B89A5A;
     transition: 0.3s;
 }
 
 nav a:hover {
     color: #B89A5A;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 
