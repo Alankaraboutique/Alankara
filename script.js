@@ -65,40 +65,48 @@ products.forEach(function(product) {
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
 
-    card.innerHTML = `
+    const productLinks = {
+    "Kanchipuram Silk Saree": "kanchipuram",
+    "Banarasi Silk Saree": "banarasi",
+    "Organza Saree": "organza",
+    "Georgette Saree": "georgette"
+};
 
+const productPage =
+    `product.html?product=${productLinks[product.name]}`;
+
+card.innerHTML = `
+    <a href="${productPage}" class="product-link">
         <img
             src="${product.image}"
             alt="${product.name}"
             class="product-image"
         >
+    </a>
 
-        <div class="product-info">
-
+    <div class="product-info">
+        <a href="${productPage}" class="product-name-link">
             <h3 class="product-name">
                 ${product.name}
             </h3>
+        </a>
 
-            <p class="product-description">
-                ${product.description}
-            </p>
+        <p class="product-description">
+            ${product.description}
+        </p>
 
-            <p class="product-price">
-                ${product.price}
-            </p>
+        <p class="product-price">
+            ${product.price}
+        </p>
 
-            <a
-                href="${whatsappLink}"
-                class="whatsapp-button"
-                target="_blank">
-
-                Order on WhatsApp
-
-            </a>
-
-        </div>
-
-    `;
+        <a
+            href="${whatsappLink}"
+            class="whatsapp-button"
+            target="_blank">
+            Order on WhatsApp
+        </a>
+    </div>
+`;
 
 
     productContainer.appendChild(card);
