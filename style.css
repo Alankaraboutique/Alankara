@@ -111,8 +111,40 @@ nav a:hover::after {
    HERO SECTION
    ================================ */
 
+.hero {
+    min-height: 88vh;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 8%;
+
+    background-image:
+        linear-gradient(
+            rgba(61, 16, 25, 0.38),
+            rgba(61, 16, 25, 0.38)
+        ),
+        url("images/hero.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    color: #F8F3E8;
+}
+
+.small-title,
+.section-subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #B89A5A;
+}
+
 .hero-top {
-    transform: translateY(-180px);
+    margin-bottom: 20px;
 }
 
 .hero-small {
@@ -131,7 +163,6 @@ nav a:hover::after {
     font-size: 18px;
     max-width: 450px;
 }
-
 
 /* ================================
    BUTTON
@@ -409,7 +440,7 @@ footer p {
         font-size: 12px;
     }
 
-    .hero {
+   .hero {
     min-height: 75vh;
     padding: 30px 25px;
     display: flex;
