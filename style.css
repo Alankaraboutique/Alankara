@@ -1,9 +1,12 @@
 /* ================================
-   ALANKARA - MAIN WEBSITE STYLE
+   ALANKARA — THE ART OF ELEGANCE
+   Luxury Ivory • Maroon • Gold
    ================================ */
 
 
-/* GENERAL */
+/* ================================
+   GENERAL
+   ================================ */
 
 * {
     margin: 0;
@@ -17,8 +20,8 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-    background: #f8f5f0;
-    color: #302722;
+    background: #F8F3E8;
+    color: #211A18;
     line-height: 1.6;
 }
 
@@ -33,17 +36,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f8f5f0;
+    background: #F8F3E8;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #e5ddd4;
+    border-bottom: 1px solid #B89A5A;
 }
 
 .logo {
     font-size: 27px;
     letter-spacing: 6px;
     font-weight: normal;
+    color: #5A1724;
 }
 
 nav {
@@ -53,13 +57,14 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #302722;
+    color: #5A1724;
     font-size: 15px;
     letter-spacing: 1px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    opacity: 0.6;
+    color: #B89A5A;
 }
 
 
@@ -77,8 +82,8 @@ nav a:hover {
 
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.25),
-            rgba(0, 0, 0, 0.25)
+            rgba(61, 16, 25, 0.28),
+            rgba(61, 16, 25, 0.28)
         ),
         url("images/hero.png");
 
@@ -88,7 +93,7 @@ nav a:hover {
 
 .hero-content {
     max-width: 600px;
-    color: white;
+    color: #F8F3E8;
 }
 
 .small-title,
@@ -96,6 +101,7 @@ nav a:hover {
     font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
+    color: #B89A5A;
 }
 
 .hero h1 {
@@ -122,8 +128,8 @@ nav a:hover {
 
     padding: 14px 30px;
 
-    background: #302722;
-    color: white;
+    background: #5A1724;
+    color: #F8F3E8;
 
     text-decoration: none;
 
@@ -131,11 +137,14 @@ nav a:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
 
+    border: 1px solid #B89A5A;
+
     transition: 0.3s;
 }
 
 .button:hover {
-    opacity: 0.8;
+    background: #3D1019;
+    color: #FFFFFF;
 }
 
 
@@ -144,7 +153,8 @@ nav a:hover {
    ================================ */
 
 .shop {
-    padding: 100px 7%;
+    padding: 110px 7%;
+    background: #F8F3E8;
 }
 
 .shop .section-subtitle {
@@ -155,8 +165,14 @@ h2 {
     text-align: center;
     font-size: clamp(32px, 5vw, 48px);
     font-weight: normal;
+    color: #5A1724;
     margin: 15px 0 55px;
 }
+
+
+/* ================================
+   PRODUCTS
+   ================================ */
 
 .products {
     display: grid;
@@ -170,15 +186,12 @@ h2 {
     margin: auto;
 }
 
-
-/* ================================
-   PRODUCT CARDS
-   ================================ */
-
 .product-card {
-    background: white;
+    background: #FFFDF8;
 
     overflow: hidden;
+
+    border: 1px solid #E8DCC5;
 
     transition:
         transform 0.3s ease,
@@ -189,7 +202,7 @@ h2 {
     transform: translateY(-6px);
 
     box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.08);
+        0 12px 35px rgba(90, 23, 36, 0.12);
 }
 
 .product-image {
@@ -208,12 +221,13 @@ h2 {
 .product-name {
     font-size: 21px;
     margin-bottom: 8px;
+    color: #5A1724;
 }
 
 .product-description {
     font-family: Arial, sans-serif;
     font-size: 13px;
-    color: #766d67;
+    color: #766D67;
     margin-bottom: 12px;
 }
 
@@ -221,6 +235,7 @@ h2 {
     font-family: Arial, sans-serif;
     font-size: 15px;
     font-weight: bold;
+    color: #3D1019;
 }
 
 .whatsapp-button {
@@ -232,8 +247,8 @@ h2 {
 
     text-align: center;
 
-    background: #302722;
-    color: white;
+    background: #5A1724;
+    color: #F8F3E8;
 
     text-decoration: none;
 
@@ -242,10 +257,14 @@ h2 {
 
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    border: 1px solid #B89A5A;
+
+    transition: 0.3s;
 }
 
 .whatsapp-button:hover {
-    opacity: 0.8;
+    background: #3D1019;
 }
 
 
@@ -254,7 +273,7 @@ h2 {
    ================================ */
 
 .about {
-    background: #eee7df;
+    background: #E8DCC5;
     padding: 110px 7%;
 }
 
@@ -264,10 +283,14 @@ h2 {
     text-align: center;
 }
 
+.about-content h2 {
+    color: #5A1724;
+}
+
 .about-content p:not(.section-subtitle) {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #625954;
+    color: #3D1019;
     margin-bottom: 15px;
 }
 
@@ -279,6 +302,11 @@ h2 {
 .contact {
     padding: 110px 7%;
     text-align: center;
+    background: #F8F3E8;
+}
+
+.contact h2 {
+    color: #5A1724;
 }
 
 .contact > p:not(.section-subtitle) {
@@ -292,16 +320,19 @@ h2 {
    ================================ */
 
 footer {
-    background: #302722;
-    color: white;
+    background: #3D1019;
+    color: #F8F3E8;
 
     text-align: center;
 
     padding: 60px 20px;
+
+    border-top: 2px solid #B89A5A;
 }
 
 footer .logo {
     margin-bottom: 15px;
+    color: #F8F3E8;
 }
 
 footer p {
