@@ -7,28 +7,28 @@ const products = [
     {
         name: "Kanchipuram Silk Saree",
         price: "MUR 3,500",
-        images: "images/saree1.png",
+        image: "images/saree1.png",
         description: "Elegant silk saree with traditional zari detailing."
     },
 
     {
         name: "Banarasi Silk Saree",
         price: "MUR 3,200",
-        images: "saree2.png",
+        image: "images/saree2.png",
         description: "Beautiful Banarasi saree with intricate woven details."
     },
 
     {
         name: "Organza Saree",
         price: "MUR 2,800",
-        images: "saree3.png",
+        image: "images/saree3.png",
         description: "Lightweight and elegant, perfect for special occasions."
     },
 
     {
         name: "Georgette Saree",
         price: "MUR 2,500",
-        images: "saree4.png",
+        image: "images/saree4.png",
         description: "Graceful georgette saree with a contemporary finish."
     }
 
@@ -38,9 +38,6 @@ const products = [
 // ========================================
 // WHATSAPP NUMBER
 // ========================================
-
-// We will replace this with your actual
-// WhatsApp number later.
 
 const whatsappNumber = "230XXXXXXXX";
 
@@ -71,9 +68,9 @@ products.forEach(function(product) {
     card.innerHTML = `
 
         <img
-            src="${product.images}"
+            src="${product.image}"
             alt="${product.name}"
-            class="product-images"
+            class="product-image"
         >
 
         <div class="product-info">
