@@ -21,20 +21,26 @@ html {
 body {
     font-family: Georgia, "Times New Roman", serif;
 
-    background-color: #F8F3E8;
+    background-color: #F3E8D0;
 
     background-image:
         radial-gradient(
-            rgba(90, 23, 36, 0.055) 1px,
-            transparent 1.5px
+            ellipse at 20% 20%,
+            rgba(120, 85, 45, 0.10) 0%,
+            transparent 45%
         ),
         radial-gradient(
-            rgba(184, 154, 90, 0.045) 1px,
-            transparent 1.5px
+            ellipse at 80% 70%,
+            rgba(90, 23, 36, 0.06) 0%,
+            transparent 45%
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(120, 85, 45, 0.025) 0px,
+            rgba(120, 85, 45, 0.025) 1px,
+            transparent 1px,
+            transparent 4px
         );
-
-    background-size: 9px 9px, 13px 13px;
-    background-position: 0 0, 4px 5px;
 
     color: #211A18;
     line-height: 1.6;
