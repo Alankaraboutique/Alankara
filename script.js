@@ -7,7 +7,7 @@ const products = [
     {
         name: "Kanchipuram Silk Saree",
         price: "MUR 3,500",
-        images: "saree1.png",
+        images: "images/saree1.png",
         description: "Elegant silk saree with traditional zari detailing."
     },
 
