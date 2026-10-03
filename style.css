@@ -44,10 +44,11 @@ header {
 }
 
 .logo {
-    font-size: 27px;
-    letter-spacing: 6px;
+    font-size: 29px;
+    letter-spacing: 7px;
     font-weight: normal;
     color: #5A1724;
+    text-transform: uppercase;
 }
 
 nav {
