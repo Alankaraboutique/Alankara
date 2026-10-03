@@ -374,9 +374,9 @@ footer {
 
     text-align: center;
 
-    padding: 60px 20px;
+    padding: 70px 20px;
 
-    border-top: 2px solid #B89A5A;
+    border-top: 1px solid #B89A5A;
 }
 
 footer .logo {
@@ -387,11 +387,14 @@ footer .logo {
 footer p {
     font-family: Arial, sans-serif;
     font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .copyright {
-    margin-top: 25px;
+    margin-top: 28px;
     opacity: 0.6;
+    font-size: 11px;
+    letter-spacing: 1px;
 }
 
 
