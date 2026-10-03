@@ -156,7 +156,7 @@ nav a:hover::after {
     line-height: 1.08;
     font-weight: normal;
     letter-spacing: 1px;
-    margin: -10px 0 15px;
+    margin: 5px 0 15px;
 }
 
 .hero-text {
