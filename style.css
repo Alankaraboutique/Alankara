@@ -276,9 +276,9 @@ h2 {
 .whatsapp-button {
     display: block;
 
-    margin-top: 18px;
+    margin-top: 20px;
 
-    padding: 12px;
+    padding: 13px;
 
     text-align: center;
 
@@ -288,14 +288,20 @@ h2 {
     text-decoration: none;
 
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
 
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 
     border: 1px solid #B89A5A;
 
-    transition: 0.3s;
+    transition: 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #3D1019;
+    border-color: #B89A5A;
+    letter-spacing: 2.5px;
 }
 
 .whatsapp-button:hover {
