@@ -115,7 +115,7 @@ nav a:hover::after {
     min-height: 88vh;
 
     display: flex;
-    align-items: center;
+  align-items: flex-end;
 
     padding: 8%;
 
