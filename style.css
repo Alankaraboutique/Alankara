@@ -411,16 +411,22 @@ footer p {
 
     .hero {
     min-height: 75vh;
-    padding: 25px;
-    align-items: center;
+    padding: 30px 25px;
+    align-items: flex-end;
 
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #3D1019;
 }
 
 .hero-content {
     width: 100%;
     max-width: 100%;
+    color: #F8F3E8;
+}
+
+.hero-heading {
     position: relative;
 }
 
@@ -429,20 +435,21 @@ footer p {
 }
 
 .hero-small {
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .hero h1 {
     font-size: 27px;
     line-height: 1.15;
+    font-weight: normal;
+    letter-spacing: 1px;
     margin: 0 0 15px;
 }
 
 .hero-text {
-    font-size: 15px;
-    max-width: 320px;
+    font-size: 16px;
 }
 
     .shop,
