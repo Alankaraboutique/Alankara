@@ -143,12 +143,16 @@ nav a:hover::after {
     color: #B89A5A;
 }
 
+.hero-top {
+    transform: translateY(-180px);
+}
+
 .hero-small {
     margin-bottom: -20px;
 }
 
 .hero h1 {
-    font-size: clamp(32px, 4vw, 48px);
+    font-size: clamp(28px, 3.5vw, 42px);
     line-height: 1.08;
     font-weight: normal;
     letter-spacing: 1px;
