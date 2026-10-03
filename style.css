@@ -97,7 +97,7 @@ nav a:hover::after {
    ================================ */
 
 .hero {
-    min-height: 82vh;
+    min-height: 88vh;
 
     display: flex;
     align-items: center;
@@ -106,8 +106,8 @@ nav a:hover::after {
 
     background-image:
         linear-gradient(
-            rgba(61, 16, 25, 0.28),
-            rgba(61, 16, 25, 0.28)
+            rgba(61, 16, 25, 0.38),
+            rgba(61, 16, 25, 0.38)
         ),
         url("images/hero.png");
 
