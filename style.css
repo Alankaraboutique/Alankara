@@ -194,7 +194,7 @@ nav a:hover::after {
 
 .shop {
     padding: 110px 7%;
-    background: #F8F3E8;
+    background: transparent;
 }
 
 .shop .section-subtitle {
@@ -360,7 +360,7 @@ h2 {
 .contact {
     padding: 120px 7%;
     text-align: center;
-    background: #F8F3E8;
+    background: transparent;
 }
 
 .contact h2 {
