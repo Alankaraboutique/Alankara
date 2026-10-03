@@ -20,7 +20,18 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-    background: #F8F3E8;
+    background-color: #F8F3E8;
+    background-image:
+        radial-gradient(
+            rgba(90, 23, 36, 0.025) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            rgba(184, 154, 90, 0.025) 1px,
+            transparent 1px
+        );
+    background-size: 7px 7px, 11px 11px;
+    background-position: 0 0, 3px 4px;
     color: #211A18;
     line-height: 1.6;
 }
