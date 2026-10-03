@@ -406,10 +406,10 @@ productImages.forEach(function(image, index) {
         const whatsappNumber = "230XXXXXXXX";
 
         const message =
-            `Hello Alankara, I am interested in the ${product.name} priced at ${product.price}. Is it still available?`;
+    `Hello Alankara, I am interested in the ${product.name} priced at ${product.price}. Is it still available?`;
 
-        document.getElementById("whatsapp-button").href =
-            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+document.getElementById("whatsapp-button").href =
+    "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
     </script>
 
 </body>
