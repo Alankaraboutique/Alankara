@@ -441,6 +441,10 @@ footer p {
     min-height: 75vh;
     padding: 30px 25px;
     align-items: flex-end;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #3D1019;
 }
 
     .hero h1 {
