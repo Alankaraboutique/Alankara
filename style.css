@@ -343,20 +343,26 @@ h2 {
    ================================ */
 
 .contact {
-    padding: 110px 7%;
+    padding: 120px 7%;
     text-align: center;
     background: #F8F3E8;
 }
 
 .contact h2 {
     color: #5A1724;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin: 15px 0 25px;
 }
 
 .contact > p:not(.section-subtitle) {
     font-family: Arial, sans-serif;
     color: #625954;
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
-
 
 /* ================================
    FOOTER
