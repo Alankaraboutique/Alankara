@@ -143,10 +143,11 @@ nav a:hover::after {
     color: #B89A5A;
 }
 .hero-small {
-    transform: translateY(-25px);
+    transform: translateY(-45px);
 }
 
 .hero h1 {
+    transform: translateY(-45px);
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.08;
     font-weight: normal;
@@ -448,9 +449,12 @@ footer p {
     margin: 8px 0 18px;
 }
    .hero-small {
-    transform: none;
+    transform: translateY(-45px);
     font-size: 10px;
     letter-spacing: 3px;
+}
+   .hero h1 {
+    transform: translateY(-45px);
 }
 
     .hero-text {
