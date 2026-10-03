@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alankara | Product Details</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .product-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 70px 6% 100px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 45px;
+            color: #3D1019;
+            text-decoration: none;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .back-link:hover {
+            color: #B89A5A;
+        }
+
+        .product-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: start;
+        }
+
+        .product-gallery {
+            position: sticky;
+            top: 30px;
+        }
+
+        .main-product-image {
+            width: 100%;
+            max-height: 700px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-info-page {
+            padding-top: 10px;
+        }
+
+        .product-info-page .section-subtitle {
+            margin-bottom: 15px;
+        }
+
+        .product-info-page h1 {
+            color: #3D1019;
+            font-size: clamp(36px, 5vw, 58px);
+            font-weight: normal;
+            line-height: 1.15;
+            margin: 0 0 20px;
+        }
+
+        .product-price-page {
+            font-family: Arial, sans-serif;
+            color: #3D1019;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
+        }
+
+        .product-description-page {
+            font-family: Arial, sans-serif;
+            color: #625954;
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 35px;
+        }
+
+        .product-details-list {
+            border-top: 1px solid rgba(61, 16, 25, 0.15);
+            margin-bottom: 35px;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(61, 16, 25, 0.15);
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .detail-label {
+            color: #625954;
+        }
+
+        .detail-value {
+            color: #3D1019;
+            text-align: right;
+        }
+
+        .styling-title {
+            color: #3D1019;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 21px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .styling-text {
+            font-family: Arial, sans-serif;
+            color: #625954;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .colour-note {
+            font-family: Arial, sans-serif;
+            color: #77706B;
+            font-size: 11px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .order-button-page {
+            display: inline-block;
+            padding: 14px 28px;
+            border: 1px solid #B89A5A;
+            color: #3D1019;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .order-button-page:hover {
+            background: #3D1019;
+            color: #F8F3E8;
+            border-color: #3D1019;
+        }
+
+        @media (max-width: 800px) {
+            .product-page {
+                padding: 45px 6% 70px;
+            }
+
+            .product-detail {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .product-gallery {
+                position: static;
+            }
+
+            .product-info-page h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ALANKARA</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#shop">Shop</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="product-page">
+
+        <a href="index.html#shop" class="back-link">← Back to Collection</a>
+
+        <div class="product-detail">
+
+            <div class="product-gallery">
+                <img
+                    id="product-image"
+                    class="main-product-image"
+                    src=""
+                    alt=""
+                >
+            </div>
+
+            <div class="product-info-page">
+
+                <p class="section-subtitle">ALANKARA COLLECTION</p>
+
+                <h1 id="product-name"></h1>
+
+                <p id="product-price" class="product-price-page"></p>
+
+                <p id="product-description" class="product-description-page"></p>
+
+                <div class="product-details-list">
+
+                    <div class="detail-row">
+                        <span class="detail-label">Colour</span>
+                        <span id="product-colour" class="detail-value"></span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span class="detail-label">Material</span>
+                        <span id="product-material" class="detail-value"></span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span class="detail-label">Style</span>
+                        <span id="product-style" class="detail-value"></span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span class="detail-label">Occasion</span>
+                        <span id="product-occasion" class="detail-value"></span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span class="detail-label">Details</span>
+                        <span id="product-details" class="detail-value"></span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span class="detail-label">Drape</span>
+                        <span id="product-drape" class="detail-value"></span>
+                    </div>
+
+                </div>
+
+                <h3 class="styling-title">Styling Suggestion</h3>
+
+                <p id="product-styling" class="styling-text"></p>
+
+                <p class="colour-note">
+                    Please note: Colours may appear slightly different depending on
+                    lighting conditions, photography, and individual screen settings.
+                    We recommend considering the product images as a visual
+                    representation of the actual colour.
+                </p>
+
+                <a
+                    id="whatsapp-button"
+                    href="#"
+                    class="order-button-page"
+                    target="_blank">
+                    Order on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="logo">ALANKARA</div>
+        <p>Draped in Luxury</p>
+        <p class="copyright">© 2026 Alankara. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        const productData = {
+            "kanchipuram": {
+                name: "Kanchipuram Silk Saree",
+                price: "MUR 3,500",
+                image: "images/saree1.png",
+                description: "A rich deep wine-red silk saree beautifully complemented by antique-gold detailing. Its regal colour palette and traditional character create an elegant statement for weddings, festive celebrations and special occasions. The graceful drape and refined detailing bring together timeless tradition and sophisticated style.",
+                colour: "Deep Wine Red with Antique Gold",
+                material: "Silk",
+                style: "Traditional",
+                occasion: "Weddings, festive celebrations & special occasions",
+                details: "Antique-gold zari detailing",
+                drape: "Structured and graceful",
+                styling: "Pair with gold jewellery, delicate bangles and a classic clutch for a polished festive look."
+            },
+
+            "banarasi": {
+                name: "Banarasi Silk Saree",
+                price: "MUR 3,200",
+                image: "images/saree2.png",
+                description: "An elegant emerald-green Banarasi silk saree enriched with intricate gold detailing. The deep jewel-toned colour gives the saree a luxurious presence, while its traditional woven character adds timeless sophistication. Perfect for weddings, festive occasions and elegant evening celebrations.",
+                colour: "Emerald Green with Gold",
+                material: "Silk",
+                style: "Banarasi",
+                occasion: "Weddings, festive celebrations & evening occasions",
+                details: "Intricate gold woven detailing",
+                drape: "Elegant and flowing",
+                styling: "Style with gold earrings, a statement bangle and a sleek traditional hairstyle."
+            },
+
+            "organza": {
+                name: "Organza Saree",
+                price: "MUR 2,800",
+                image: "images/saree3.png",
+                description: "A delicate blush-pink organza saree accented with soft gold detailing. Light and feminine, it creates an effortlessly graceful silhouette while adding a subtle touch of glamour. A beautiful choice for celebrations, evening gatherings and special occasions.",
+                colour: "Blush Pink with Soft Gold",
+                material: "Organza",
+                style: "Contemporary & feminine",
+                occasion: "Parties, celebrations & special occasions",
+                details: "Delicate and airy finish",
+                drape: "Lightweight and elegant",
+                styling: "Pair with pearl or delicate gold jewellery for a soft, sophisticated look."
+            },
+
+            "georgette": {
+                name: "Georgette Saree",
+                price: "MUR 2,500",
+                image: "images/saree4.png",
+                description: "A sophisticated midnight-blue georgette saree finished with subtle silver detailing. Its deep, elegant colour combined with the fluid nature of georgette creates a graceful and contemporary silhouette. Ideal for evening occasions, celebrations and dinners where understated elegance takes centre stage.",
+                colour: "Midnight Blue with Silver",
+                material: "Georgette",
+                style: "Contemporary",
+                occasion: "Parties, dinners & special occasions",
+                details: "Subtle silver detailing",
+                drape: "Soft and fluid",
+                styling: "Complete the look with silver jewellery, a sleek clutch and refined evening makeup."
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const productKey = params.get("product");
+        const product = productData[productKey] || productData["kanchipuram"];
+
+        document.getElementById("product-name").textContent = product.name;
+        document.getElementById("product-price").textContent = product.price;
+        document.getElementById("product-image").src = product.image;
+        document.getElementById("product-image").alt = product.name;
+        document.getElementById("product-description").textContent = product.description;
+        document.getElementById("product-colour").textContent = product.colour;
+        document.getElementById("product-material").textContent = product.material;
+        document.getElementById("product-style").textContent = product.style;
+        document.getElementById("product-occasion").textContent = product.occasion;
+        document.getElementById("product-details").textContent = product.details;
+        document.getElementById("product-drape").textContent = product.drape;
+        document.getElementById("product-styling").textContent = product.styling;
+
+        const whatsappNumber = "230XXXXXXXX";
+
+        const message =
+            `Hello Alankara, I am interested in the ${product.name} priced at ${product.price}. Is it still available?`;
+
+        document.getElementById("whatsapp-button").href =
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    </script>
+
+</body>
+</html>
