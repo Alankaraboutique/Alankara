@@ -126,8 +126,8 @@ nav a:hover::after {
         ),
         url("images/hero.png");
 
-    background-size: cover;
-    background-position: center;
+    background-size: auto 100%;
+background-position: center center;
 }
 
 .hero-content {
