@@ -423,7 +423,7 @@ footer p {
 /* ================================
    MOBILE
    ================================ */
-
+@media (max-width: 700px) {
 .hero {
     min-height: 75vh;
     padding: 30px 25px;
@@ -477,12 +477,13 @@ footer p {
     }
 
     .products {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
 
-    .product-image {
-        height: 430px;
-    }
+.product-image {
+    height: 260px;
+    object-fit: cover;
+}
 
 }
